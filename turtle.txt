@@ -1,0 +1,102 @@
+import turtle
+
+def draw_triangle(turtle, x, y):
+    turtle.goto(x,y)
+    turtle.towards(x)
+    
+tommy = turtle.Turtle()
+
+
+draw_triangle(tommy, 100, 0)
+draw_triangle(tommy, 50, 100)
+draw_triangle(tommy, 0, 0)
+
+def draw_square(turtle, x, y):
+    turtle.left(90)
+    turtle.goto(x,y)
+    turtle.towards(x)
+
+draw_square(tommy, 0, 110)
+
+def draw_square2(turtle, x, y):
+    turtle.right(90)
+    turtle.goto(x,y)
+    turtle.towards(x)
+    
+draw_square2(tommy, 100, 110)
+
+def draw_square3(turtle, x, y):
+    turtle.right(90)
+    turtle.goto(x,y)
+    turtle.towards(x)
+    
+draw_square3(tommy, 100, 0)
+
+tommy.penup()
+
+tommy.back(40)
+tommy.right(90)
+tommy.back(50)
+
+tommy.pendown()
+
+def circle(turtle, size, x, y):
+    turtle.goto(x,y)
+    turtle.circle(size)
+    
+circle(tommy, 100, 40, 150)
+
+# create a turtle
+from turtle import Turtle
+
+belinda = Turtle()
+
+# set the speed to the highest setting
+belinda.speed(0)
+
+# draw a square
+for i in range(4):
+  belinda.forward(50)
+  belinda.right(90)
+
+# move the turtle
+belinda.penup()
+
+belinda.back(50)
+belinda.right(90)
+belinda.forward(55)
+belinda.left(90)
+
+belinda.pendown()
+
+# draw a triangle
+for i in range(3):
+  belinda.forward(150)
+  belinda.left(120)
+
+# move the turtle
+belinda.penup()
+
+belinda.back(40)
+belinda.right(90)
+belinda.back(50)
+
+belinda.pendown()
+
+# draw a circle
+for i in range(360):
+  belinda.forward(2)
+  belinda.left(1)
+
+# square function
+
+def draw_square(turtle, length):
+  for i in range(4):
+    turtle.forward(length)
+    turtle.right(90)
+
+# shape function
+def draw_shape(turtle, sides, length):
+  for i in range(sides):
+    turtle.forward(length)
+    turtle.right(360/sides)
